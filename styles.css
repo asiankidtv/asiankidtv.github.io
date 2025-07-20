@@ -1,0 +1,48 @@
+body
+{
+    background-image: url("https://img.freepik.com/free-vector/bring-night-space-wallpaper-with-glowing-starfield_1017-53512.jpg?semt=ais_hybrid&w=740")
+}
+
+h1
+{
+    color: white;
+    text-align: center;
+    font: italic 3rem "Fira Sans", serif;
+}
+
+h2
+{
+    font: italic bold 2rem "Fira Sans", serif;
+    margin: 1em;
+    color: white;
+}
+
+h3
+{
+    font: 2rem "Fira Sans", serif;
+    color: white;
+}
+
+p
+{
+    font: 1.25rem "Fira Sans", serif;
+    color: white;
+}
+
+iframe
+{
+    margin: 50px;
+}
+
+.box
+{
+    color: white;
+    margin: 1em
+}
+
+.centered
+{
+    text-align: center;
+    color: white;
+    margin: 100px;
+}
