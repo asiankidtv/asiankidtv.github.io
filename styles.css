@@ -13,7 +13,6 @@ h1
 h2
 {
     font: italic bold 2rem "Fira Sans", serif;
-    margin: 1em;
     color: white;
 }
 
@@ -37,7 +36,7 @@ iframe
 .box
 {
     color: white;
-    margin: 1em
+    margin: 4%
 }
 
 .centered
