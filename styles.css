@@ -1,36 +1,25 @@
 body
 {
-    background-image: url("https://img.freepik.com/free-vector/bring-night-space-wallpaper-with-glowing-starfield_1017-53512.jpg?semt=ais_hybrid&w=740")
+    color: white;
+    background-image: url("https://img.freepik.com/free-vector/bring-night-space-wallpaper-with-glowing-starfield_1017-53512.jpg?semt=ais_hybrid&w=740");
 }
 
 h1
 {
-    color: white;
     text-align: center;
     font: italic 3rem "Fira Sans", serif;
+    margin-top: 25px;
 }
 
 h2
 {
-    font: italic bold 2rem "Fira Sans", serif;
-    color: white;
+    font: bold 2rem;
+    margin-left: 50px;
 }
 
 h3
 {
-    font: 2rem "Fira Sans", serif;
-    color: white;
-}
-
-p
-{
-    font: 1.25rem "Fira Sans", serif;
-    color: white;
-}
-
-iframe
-{
-    margin: 50px;
+    text-align: center;
 }
 
 .box
@@ -44,4 +33,23 @@ iframe
     text-align: center;
     color: white;
     margin: 100px;
+}
+
+.card
+{
+    margin-top: 20px;
+    background-color: slategrey;
+    color: #e2e6e9;
+}
+
+.card-left
+{
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.card-right
+{
+    margin-left: auto;
+    margin-right: 50px;
 }
