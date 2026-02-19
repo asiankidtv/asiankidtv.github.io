@@ -17,7 +17,7 @@
                     <strong>Home</strong>
                 </a>
 
-                <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+                <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -25,24 +25,37 @@
                 </a>
             </div>
 
-            <div class="navbar-menu">
+            <div id="mainNavbar" class="navbar-menu">
                 <div class="navbar-start">
                     <a class="navbar-item" href="portfolio.html">Portfolio</a>
                     <a class="navbar-item" href="music.html">Music</a>
                 </div>
             </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                    burgers.forEach(function (burger) {
+                        burger.addEventListener('click', function () {
+                            var targetId = burger.dataset.target;
+                            var target = document.getElementById(targetId);
+                            burger.classList.toggle('is-active');
+                            if (target) target.classList.toggle('is-active');
+                        });
+                    });
+                });
+            </script>
         </nav>
 
         <section class="hero is-large has-bg">
             <div class="hero-body">
                 <p class="title is-1">Ethan Kwok</p>
-                <p class="subtitle">I like building things on the web. (Website UNDER CONSTRUCTION)</p>
+                <p class="subtitle">I like building things on the web.</p>
             </div>
         </section>
 
         <section class="hero is-small">
             <div class="hero-body has-text-centered">
-                <p class="title">Full Portfolio:</p>
+                <p class="title">Full Computer Science Portfolio:</p>
                 <p class="subtitle">Explore my full project selection and Computer Science experience:</p>
                 <a href="portfolio.html"><button class="button is-large is-fullwidth">ℹ️ Click to view portfolio</button></a>
             </div>
@@ -51,7 +64,7 @@
         <section class="hero is-small">
             <div class="hero-body has-text-centered">
                 <p class="title">About Me:</p>
-                <p class="subtitle">A list of things I have been doing</p>
+                <p class="subtitle">A list of some non-Computer-Science things I have been doing</p>
             </div>
         </section>
 
@@ -65,6 +78,12 @@
                                 <li><p class="is-size-5">Debate (Head Captain)</p></li>
                                 <li><p class="is-size-5">DECA (Vice President of Finance)</p></li>
                                 <li><p class="is-size-5">Chemistry Club (Treasurer)</p></li>
+                                <li><p class="is-size-5">Principal Student Advisory Board</p></li>
+                                <li><p class="is-size-5">Varsity Math Team</p></li>
+                                <li><p class="is-size-5">Science Olympiad</p></li>
+                                <li><p class="is-size-5">Beta Club</p></li>
+                                <li><p class="is-size-5">Science National Honor Society</p></li>
+                                <li><p class="is-size-5">National Honor Society</p></li>
                             </ul>
                         </div>
                     </div>
@@ -75,8 +94,13 @@
                     <div class="card-content">
                         <div class="card-header-title"><p class="title is-4">Awards:</p></div>
                         <div class="content">
+                            <p class="subtitle is-6">Below are my most important to me:</p>
                             <ul>
-                                <li><p class="is-size-5"></p></li>
+                                <li><p class="is-size-5">1st Place School at Griffin RESA Math Tournament</p></li>
+                                <li><p class="is-size-5">Quarterfinalist Team at GFCA 2nd Year State Championship (Debate)</p></li>
+                                <li><p class="is-size-5">5th Place Speaker at GFCA 2nd Year State Championship (Debate)</p></li>
+                                <li><p class="is-size-5">2nd Place in Robot Tour at UGA Invitational</p></li>
+                                <li><p class="is-size-5">4th Place in Chemistry Lab at UGA Invitational</p></li>
                             </ul>
                         </div>
                     </div>
