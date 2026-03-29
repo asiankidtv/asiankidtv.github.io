@@ -44,3 +44,24 @@
     height: 2px;
     opacity: 0.5;
 }
+
+.lazy-card {
+    transition: transform 0.3s ease;
+}
+
+.lazy-card:nth-child(1) {
+    transform: rotate(-3deg);
+}
+
+.lazy-card:nth-child(2) {
+    transform: rotate(2deg);
+}
+
+.lazy-card:nth-child(3) {
+    transform: rotate(-1deg);
+}
+
+.lazy-card:hover {
+    transform: rotate(0deg);
+    z-index: 10;
+}
