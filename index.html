@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="newStyles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
 
         <title>Home</title>
     </head>
@@ -14,7 +16,7 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="/">
-                    <strong>Home</strong>
+                    <strong class="has-text-white">Home</strong>
                 </a>
 
                 <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
@@ -27,8 +29,8 @@
 
             <div id="mainNavbar" class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item" href="portfolio.html">Portfolio</a>
-                    <a class="navbar-item" href="music.html">Music</a>
+                    <a class="navbar-item has-text-white" href="portfolio.html">Portfolio</a>
+                    <a class="navbar-item has-text-white" href="music.html">Music</a>
                 </div>
             </div>
             <script>
@@ -55,73 +57,199 @@
 
         <section class="hero is-small">
             <div class="hero-body has-text-centered">
-                <p class="title">Full Computer Science Portfolio:</p>
+                <p class="title">About Me:</p>
+            </div>
+        </section>
+
+        <div class="columns is-centered" style="margin: 0 5%;">
+            <div class="column is-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-128x128">
+                                    <img class="is-rounded profile-img" src="/images/profileImg.jpg" alt="Profile picture">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Ethan Kwok</p>
+                                <p class="subtitle is-6">11th Grade</p>
+                                <div class="content has-text-white">
+                                    <p>Hi! I'm Ethan and I am a highschooler based in Georgia with a passion for Computer Science, Math, Science, Debate, and Finance.
+                                         I enjoy working on developing and deploying web applications that serve a specific purpose and reflect an interest of mine.
+                                         I hope to one day work in a team to create unique and impactful software that solves problems.
+                                    </p>
+                                </div>
+                                <hr class="accent-line">
+                                <div class="is-flex is-flex-wrap-wrap" style="gap: 1rem;">
+                                    <span><i class="ph ph-code is-size-5" style="color: aquamarine;"></i> Web Developer</span>
+                                    <span><i class="ph ph-graduation-cap is-size-5" style="color: aquamarine;"></i> Junior Marshall</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="hero is-small">
+            <div class="hero-body has-text-centered">
+                <p class="title">Computer Science Projects:</p>
                 <p class="subtitle">Explore my full project selection and Computer Science experience:</p>
-                <a href="portfolio.html"><button class="button is-large is-fullwidth">ℹ️ Click to view portfolio</button></a>
+
+
+
+                <a href="portfolio.html"><button class="button is-large is-fullwidth">
+                    <i class="ph ph-info is-size-3" style="color: aquamarine;"></i>
+                    Click to view portfolio
+                </button></a>
             </div>
         </section>
 
         <section class="hero is-small">
             <div class="hero-body has-text-centered">
-                <p class="title">About Me:</p>
-                <p class="subtitle">A list of some non-Computer-Science things I have been doing</p>
+                <p class="title">Interests and Activities:</p>
+                <p class="subtitle">Things I enjoy outside of Computer Science:</p>
             </div>
         </section>
 
-        <div class="columns">
+        <div class="columns is-multiline" style="margin: 0 5%;">
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-header-title"><p class="title is-4">Clubs:</p></div>
-                        <div class="content">
+                        <i class="ph-fill ph-game-controller is-size-3" style="color: aquamarine;"></i>
+                        <p class="title is-4">Gaming</p>
+                        <div class="content is-size-6 has-text-white">
+                            <p>
+                                In my free time I enjoy playing video games on my PC or at the arcade.
+                                My favorite genres are shooters and rhythm games.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="mt-4"><strong>Games:</strong></p>
                             <ul>
-                                <li><p class="is-size-5">Debate (Head Captain)</p></li>
-                                <li><p class="is-size-5">DECA (Vice President of Finance)</p></li>
-                                <li><p class="is-size-5">Chemistry Club (Treasurer)</p></li>
-                                <li><p class="is-size-5">Principal Student Advisory Board</p></li>
-                                <li><p class="is-size-5">Varsity Math Team</p></li>
-                                <li><p class="is-size-5">Science Olympiad</p></li>
-                                <li><p class="is-size-5">Beta Club</p></li>
-                                <li><p class="is-size-5">Science National Honor Society</p></li>
-                                <li><p class="is-size-5">National Honor Society</p></li>
+                                <li><a href="https://maimai.sega.com/">maimai</a></li>
+                                <li><a href="https://arcaea.lowiro.com/en">Arcaea</a></li>
+                                <li><a href="https://www.roblox.com/">Roblox</a></li>
+                                <li><a href="https://store.steampowered.com/app/1422450/Deadlock/">Deadlock</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-header-title"><p class="title is-4">Awards:</p></div>
-                        <div class="content">
-                            <p class="subtitle is-6">Below are my most important to me:</p>
+                        <i class="ph-fill ph-music-notes is-size-3" style="color: aquamarine;"></i>
+                        <p class="title is-4">Music</p>
+                        <div class="content is-size-6 has-text-white">
+                            <p>
+                                I play two instruments, Piano for about 10 years and Cello for my school orchestra for about 6 years.
+                                I also enjoy listening to music anytime I am working on anything, and a small list of songs I like can be found <a href="music.html">here.</a>
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="mt-4"><strong>Genres:</strong></p>
                             <ul>
-                                <li><p class="is-size-5">1st Place School at Griffin RESA Math Tournament</p></li>
-                                <li><p class="is-size-5">Quarterfinalist Team at GFCA 2nd Year State Championship (Debate)</p></li>
-                                <li><p class="is-size-5">5th Place Speaker at GFCA 2nd Year State Championship (Debate)</p></li>
-                                <li><p class="is-size-5">2nd Place in Robot Tour at UGA Invitational</p></li>
-                                <li><p class="is-size-5">4th Place in Chemistry Lab at UGA Invitational</p></li>
+                                <li>Rhythm Game</li>
+                                <li>J-Pop</li>
+                                <li>Vocaloid</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-header-title"><p class="title is-4">Classes:</p></div>
-                        <div class="content">
+                        <i class="ph-fill ph-chat-dots is-size-3" style="color: aquamarine;"></i>
+                        <p class="title is-4">Debate</p>
+                        <div class="content is-size-6 has-text-white">
+                            <p>
+                                I have done Public Forum Debate at my school for about 2 years now.
+                                I will also be a captain for my school's debate team for the 2027-2028 school year.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="mt-4"><strong>Awards:</strong></p>
                             <ul>
-                                <li><p class="is-size-5">AP Computer Science A</p></li>
-                                <li><p class="is-size-5">AP Calculus BC</p></li>
-                                <li><p class="is-size-5">AP Chemistry</p></li>
-                                <li><p class="is-size-5">AP Language and Composition</p></li>
-                                <li><p class="is-size-5">AP US History</p></li>
-                                <li><p class="is-size-5">AP Physics 1</p></li>
-                                <li><p class="is-size-5">AP World History (5)</p></li>
-                                <li><p class="is-size-5">AP Precalculus (5)</p></li>
-                                <li><p class="is-size-5">AP Statistics (5)</p></li>
-                                <li><p class="is-size-5">AP Human Geography (5)</p></li>
+                                <li>- Quarterfinalist at GFCA 2026 State Championships</li>
+                                <li>- 5th Place Speaker at GFCA 2026 State Championship</li>
+                                <li>- Octofinalist Team at GFCA 2026 Varsity State</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="ph-fill ph-math-operations is-size-3" style="color: aquamarine;"></i>
+                        <p class="title is-4">Math Team</p>
+                        <div class="content is-size-6 has-text-white">
+                            <p>
+                                I have competed for my school's varsity math team for about two years now and have won numerous awards during that time.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="mt-4"><strong>Awards:</strong></p>
+                            <ul>
+                                <li>- 1st Place School at 2026 Griffin RESA Math Tournament</li>
+                                <li>- 3rd Place at 2026 County Math Invitational</li>
+                                <li>- 1st Place School at 2025 University of West Georgia Math Day</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="ph-fill ph-currency-dollar is-size-3" style="color: aquamarine;"></i>
+                        <p class="title is-4">DECA</p>
+                        <div class="content is-size-6 has-text-white">
+                            <p>
+                                I am the Vice President of Finance for my school's DECA Chapter and I compete under the Finance Events.
+                                I also help run my school's School-Based Enterprise (SBE).
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="mt-4"><strong>Awards:</strong></p>
+                            <ul>
+                                <li>- 2nd Place in Accounting Applications at 2026 State Competition</li>
+                                <li>- 2025 and 2026 ICDC Qualifier</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="ph-fill ph-atom is-size-3" style="color: aquamarine;"></i>
+                        <p class="title is-4">Science</p>
+                        <div class="content is-size-6 has-text-white">
+                            <p>
+                                I compete in my school's Science Olympiad team and 
+                                I am one of the founding members and currrent treasurer for my school's Chemistry Club, a club focused on teaching students Chemistry through fun monthly experiments.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="mt-4"><strong>Awards:</strong></p>
+                            <ul>
+                                <li>- 2nd Place in Robot Tour at 2025 UGA Invitational</li>
+                                <li>- 4th Place in Chemistry Lab at 2025 UGA Invitational</li>
                             </ul>
                         </div>
                     </div>
